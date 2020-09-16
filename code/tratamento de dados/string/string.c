@@ -10,8 +10,13 @@ bool check_string(char* string)
 
   for( i = 0; i < strlen(string); i++)
   {
-    
+    if(!isalpha(string[i]))
+    {
+      return false;
+    }
   }
+
+  return true;
 }
 
 bool check_string_e_igual(char* string, char* string_compair)
