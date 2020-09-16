@@ -3,6 +3,7 @@
 #include <string.h>
 #include "produto.h"
 #include "linked_list.h"
+#include "tratamento de dados/string/string.h"
 #include "tratamento de dados/inteiro/inteiro.h"
 
 struct list
@@ -22,10 +23,19 @@ LP* crear_list(char* nome_do_produto, char* local_do_produto, int quantidade_do_
     printf("Error: Não Allocado \n");
     exit(EXIT_FAILURE);
   }
-  new->codigo = 0;
-  new->info = crear_produto(nome_do_produto, local_do_produto, quantidade_do_produto, 0);
-  new->after = NULL;
-  new->before = NULL;
+
+  if(check_string(nome_do_produto))
+  {
+    new->codigo = 0;
+    new->info = crear_produto(nome_do_produto, local_do_produto, quantidade_do_produto, 0);
+    new->after = NULL;
+    new->before = NULL;
+  }
+  else
+  {
+    printf("Insira um nome de prduto válido\n");
+    exit(EXIT_FAILURE);
+  }
 
   return new;
 }
@@ -33,6 +43,8 @@ LP* crear_list(char* nome_do_produto, char* local_do_produto, int quantidade_do_
 void inserir_lista_produto(LP** lista_produto, char* nome_do_produto, char* local_do_produto, int quantidade_do_produto)
 {
   LP* new = (LP*)malloc(sizeof(LP));
+
+  bool check = ((!check_codigo((*lista_produto)->codigo)) || (!check_string(nome_do_produto))); 
   
   if(new == NULL)
   {
@@ -40,10 +52,19 @@ void inserir_lista_produto(LP** lista_produto, char* nome_do_produto, char* loca
     exit(EXIT_FAILURE);
   }
 
-  if(!check_codigo((*lista_produto)->codigo))
+  if(check)
   {
+    printf("Error: códio inválido ou nome do produto inválido\n");
     exit(EXIT_FAILURE);
   }
+
+  if(count_name(*lista_produto) == 20)
+  {
+    printf("Não é possível adicionar mais produtos no estoque\n");
+    return;
+  }
+  
+
 
   new->codigo = (*lista_produto)->codigo + 1;
 
@@ -94,6 +115,25 @@ LP* vender(LP* lista_produto)
   }
 
   return lista_produto;
+}
+
+int count_name(LP* lista_produto)
+{
+  int sum = 0;
+  int comparar_n_nome_de_produtos = 0;
+  LP* i = lista_produto;
+
+  for( i = lista_produto; i != NULL; i = i->after)
+  {
+    if(comparar_n_nome_de_produtos < 20)
+    {
+      sum += count_name_iqual(i->info, i->after->info);
+    }
+
+    comparar_n_nome_de_produtos++;
+  }
+
+  return sum;
 }
 
 LP* remove_produto(LP* lista_produto)

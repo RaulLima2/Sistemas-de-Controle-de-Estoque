@@ -79,7 +79,8 @@ void interface()
     }
     else if(escolha == 4)
     {
-      printf("%s", input[12]);
+      printf("%s", input[13]);
+      getchar();
       fgets(key, 50, stdin);
       key[strlen(key) - 1] = '\0';
 

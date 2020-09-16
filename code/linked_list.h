@@ -11,6 +11,8 @@ LP* atualizar_lista(LP* lista_produto);
 
 LP* vender(LP* lista_produto);
 
+int count_name(LP* lista_produto);
+
 LP* remove_produto(LP* lista_produto);
 
 void pesquisa_por_produto(LP* lista_produto, char* key);
@@ -18,5 +20,7 @@ void pesquisa_por_produto(LP* lista_produto, char* key);
 void print_lista_produto(LP* lista_produto);
 
 LP* busca(LP* lista_produto, char* key);
+
+
 
 #endif

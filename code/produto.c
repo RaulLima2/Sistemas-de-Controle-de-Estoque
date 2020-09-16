@@ -78,7 +78,6 @@ P* atualiza_produto(P* produto)
 
   if(temp_chose == 1)
   {
-    printf("%d", temp_chose);
     fgets(temp, 50, stdin);
     temp[strlen(temp) - 1] = '\0';
 
@@ -166,6 +165,11 @@ P* vender_produto(P* produto)
   }
 
   return produto;
+}
+
+int count_name_iqual(P* now, P* after)
+{
+  return strncmp(now->nome_produto, after->nome_produto, strlen(after->nome_produto)) != 0 ? 1 : 0;
 }
 
 void print_quantidade_em_produto(P* produto)
