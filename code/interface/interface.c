@@ -53,7 +53,7 @@ void interface()
       nome_produto[strlen(nome_produto) - 1] = '\0';
 
       printf("%s", input[11]);
-      getchar();
+      //getchar();
       fgets(origem, 50, stdin);
       origem[strlen(origem) - 1] = '\0';
 

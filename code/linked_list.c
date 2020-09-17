@@ -3,7 +3,7 @@
 #include <string.h>
 #include "produto.h"
 #include "linked_list.h"
-#include "tratamento de dados/string/string.h"
+#include "tratamento de dados/word/word.h"
 #include "tratamento de dados/inteiro/inteiro.h"
 
 struct list

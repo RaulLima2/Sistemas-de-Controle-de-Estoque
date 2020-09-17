@@ -26,9 +26,9 @@ P* crear_produto(char* nome, char* local, int quantidade, int cod)
 
   P* new = (P*)malloc(sizeof(P));
 
-  new->key = (char*)calloc(9, sizeof(char*));
-  new->nome_produto = (char*)calloc(50, sizeof(char*));
-  new->pais_produto = (char*)calloc(50, sizeof(char*));
+  new->key = (char*)calloc(9, sizeof(char));
+  new->nome_produto = (char*)calloc(50, sizeof(char));
+  new->pais_produto = (char*)calloc(50, sizeof(char));
   
   new->qtd_items = quantidade;
   new->cod = cod;
