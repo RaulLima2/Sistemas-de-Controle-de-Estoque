@@ -10,13 +10,13 @@ char* gerar_cod(char* abr_nome_pais, unsigned int cod)
 
   if(cod < 10)
   {
-    strncpy(temp,"00", 2);
+    strcpy(temp,"00");
   }
   else
   {
     if(cod < 100)
     {
-      strncpy(temp,"0", 1);
+      strcpy(temp,"0");
     }
   }
 

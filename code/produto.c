@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -52,6 +51,7 @@ P* crear_produto(char* nome, char* local, int quantidade, int cod)
       printf("%s\n", error[i]);
     }
   }
+
   return new;
 }
 
@@ -106,7 +106,7 @@ P* atualiza_produto(P* produto)
 
 P* atualiza_produto_nome(P* produto, char* nome_produto)
 {
-  strncpy(produto->nome_produto, nome_produto, strlen(nome_produto));
+  strcpy(produto->nome_produto, nome_produto);
 
   return produto;
 }
@@ -122,7 +122,7 @@ P* atualiza_produto_origem(P* produto, char* origem_produto)
 {
   if(check_country(origem_produto))
   {
-    strncpy(produto->pais_produto, origem_produto, strlen(origem_produto));
+    strcpy(produto->pais_produto, origem_produto);
     strncpy(produto->key, gerar_cod(get_abr(origem_produto), produto->cod), strlen(gerar_cod(get_abr(origem_produto), produto->cod)));
 
   }
@@ -169,7 +169,18 @@ P* vender_produto(P* produto)
 
 int count_name_iqual(P* now, P* after)
 {
-  return strncmp(now->nome_produto, after->nome_produto, strlen(after->nome_produto)) != 0 ? 1 : 0;
+  if(after != NULL)
+  {
+    if(strncmp(now->nome_produto, after->nome_produto, strlen(after->nome_produto)) != 0)
+    {
+      return 1;
+    }
+    else
+    {
+      return 0;
+    }
+    
+  }
 }
 
 void print_quantidade_em_produto(P* produto)

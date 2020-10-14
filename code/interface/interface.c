@@ -7,7 +7,7 @@
 
 void interface()
 {
-  LP* new = NULL;
+  LP* new = create_struct();
   int quantidade_produto;
   char* nome_produto = (char*)calloc(50,sizeof(char));
   char* origem = (char*)calloc(50,sizeof(char));

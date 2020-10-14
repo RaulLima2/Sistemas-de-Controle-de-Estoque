@@ -3,6 +3,8 @@
 
 typedef struct list LP;
 
+LP* create_struct();
+
 LP* crear_list(char* nome_do_produto, char* local_do_produto, int quantidade_do_produto);
 
 void inserir_lista_produto(LP** lista_produto, char* nome_do_produto, char* local_do_produto, int quantidade_do_produto);
@@ -20,7 +22,5 @@ void pesquisa_por_produto(LP* lista_produto, char* key);
 void print_lista_produto(LP* lista_produto);
 
 LP* busca(LP* lista_produto, char* key);
-
-
 
 #endif

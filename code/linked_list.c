@@ -14,6 +14,11 @@ struct list
   LP*   before;
 };
 
+LP* create_struct()
+{
+  return NULL;
+}
+
 LP* crear_list(char* nome_do_produto, char* local_do_produto, int quantidade_do_produto)
 {
   LP* new = (LP*)malloc(sizeof(LP));
@@ -58,26 +63,28 @@ void inserir_lista_produto(LP** lista_produto, char* nome_do_produto, char* loca
     exit(EXIT_FAILURE);
   }
 
-  if(count_name(*lista_produto) == 20)
-  {
-    printf("Não é possível adicionar mais produtos no estoque\n");
-    return;
-  }
-  
-
-
   new->codigo = (*lista_produto)->codigo + 1;
-
   new->info = crear_produto(nome_do_produto, local_do_produto, quantidade_do_produto, new->codigo);
   new->after = *lista_produto;
   new->before = NULL;
-
-  if((*lista_produto) != NULL)
+  
+  if(*lista_produto != NULL)
   {
     (*lista_produto)->before = new;
   }
-
+  
   *lista_produto = new;
+  printf("processor 1\n");
+
+  LP* count = *lista_produto;
+
+  // if(count_name(count) == 20)
+  // {
+  //   printf("Não é possível adicionar mais produtos no estoque\n");
+  //   return;
+  // }
+  
+
 }
 
 LP* atualizar_lista(LP* lista_produto)
@@ -95,6 +102,7 @@ LP* vender(LP* lista_produto)
   char* codigo_produto = (char*)calloc(50,sizeof(char));
 
   printf("Insira o código a ser procurado:\n");
+  getchar();
   fgets(codigo_produto, 50, stdin);
   codigo_produto[strlen(codigo_produto) - 1] = '\0';
 
@@ -127,7 +135,10 @@ int count_name(LP* lista_produto)
   {
     if(comparar_n_nome_de_produtos < 20)
     {
-      sum += count_name_iqual(i->info, i->after->info);
+      if(count_name_iqual(i->info, i->after->info))
+      {
+        sum++;
+      }
     }
 
     comparar_n_nome_de_produtos++;
@@ -175,6 +186,11 @@ void pesquisa_por_produto(LP* lista_produto, char* key)
 
 void print_lista_produto(LP* lista_produto)
 {
+  if(lista_produto == NULL)
+  {
+    return;
+  }
+
   LP* i = lista_produto;
 
   for(i = lista_produto; i != NULL; i = i->after)
