@@ -20,10 +20,13 @@ int get_line_country(char* nome_do_pais)
 
   while(fgets(pais, 255, lista_de_paises) != NULL)
   {
+		pais[strlen(pais) - 1] = '\0';
+
     if(strstr(pais, nome_do_pais) != NULL)
     {
       return  line_found;
     }
+
     line_found++;
   }
 
@@ -41,7 +44,10 @@ bool check_country(char* name_country)
   {
     if(!isalpha(name_country[i]))
     {
-      return false;
+			if(!isblank(name_country[i]))
+			{
+      	return false;
+			}
     }
 
   }
@@ -75,6 +81,7 @@ char* get_abr(char* nome_do_pais)
     {
       return pais;
     }
+
     line_found--;
   }
 

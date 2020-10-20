@@ -1,249 +1,248 @@
-Afghanistan
-Åland Islands
-Albania
-Algeria
-American Samoa
 Andorra
-Angola
-Anguilla
-Antarctica
+United Arab Emirates
+Afghanistan
 Antigua and Barbuda
-Argentina
+Anguilla
+Albania
 Armenia
-Aruba
-Australia
+Angola
+Antarctica
+Argentina
+American Samoa
 Austria
+Australia
+Aruba
+Åland Islands
 Azerbaijan
-Bahamas
-Bahrain
-Bangladesh
-Barbados
-Belarus
-Belgium
-Belize
-Benin
-Bermuda
-Bhutan
-Bolivia (Plurinational State of)
-Bonaire, Sint Eustatius and Saba
 Bosnia and Herzegovina
-Botswana
-Bouvet Island
-Brazil
-British Indian Ocean Territory
-British Virgin Islands
-Brunei Darussalam
-Bulgaria
+Barbados
+Bangladesh
+Belgium
 Burkina Faso
+Bulgaria
+Bahrain
 Burundi
-Cabo Verde
-Cambodia
-Cameroon
+Benin
+Saint Barthélemy
+Bermuda
+Brunei Darussalam
+Bolivia Plurinational State of
+Bonaire, Sint Eustatius and Saba
+Brazil
+Bahamas
+Bhutan
+Bouvet Island
+Botswana
+Belarus
+Belize
 Canada
-Cayman Islands
+Cocos Keeling Islands
+Democratic Republic of the Congo
 Central African Republic
-Chad
-Chile
-China
-China, Hong Kong Special Administrative Region
-China, Macao Special Administrative Region
-Christmas Island
-Cocos (Keeling) Islands
-Colombia
-Comoros
 Congo
-Cook Islands
-Costa Rica
+Switzerland
 Côte d’Ivoire
-Croatia
+Cook Islands
+Chile
+Cameroon
+China
+Colombia
+Costa Rica
 Cuba
+Cabo Verde
 Curaçao
+Christmas Island
 Cyprus
 Czechia
-Democratic People's Republic of Korea
-Democratic Republic of the Congo
-Denmark
+Germany
 Djibouti
+Denmark
 Dominica
 Dominican Republic
+Algeria
 Ecuador
-Egypt
-El Salvador
-Equatorial Guinea
-Eritrea
 Estonia
-Eswatini
+Egypt
+Western Sahara
+Eritrea
+Spain
 Ethiopia
-Falkland Islands (Malvinas)
-Faroe Islands
-Fiji
 Finland
+Fiji
+Falkland Islands Malvinas
+Micronesia Federated States of
+Faroe Islands
 France
-French Guiana
-French Polynesia
-French Southern Territories
 Gabon
-Gambia
+United Kingdom of Great Britain and Northern Ireland
+Grenada
 Georgia
-Germany
+French Guiana
+Guernsey
 Ghana
 Gibraltar
-Greece
 Greenland
-Grenada
-Guadeloupe
-Guam
-Guatemala
-Guernsey
+Gambia
 Guinea
+Guadeloupe
+Equatorial Guinea
+Greece
+South Georgia and the South Sandwich Islands
+Guatemala
+Guam
 Guinea-Bissau
 Guyana
-Haiti
+China, Hong Kong Special Administrative Region
 Heard Island and McDonald Islands
-Holy See
 Honduras
+Croatia
+Haiti
 Hungary
-Iceland
-India
 Indonesia
-Iran (Islamic Republic of)
-Iraq
 Ireland
-Isle of Man
 Israel
+Isle of Man
+India
+British Indian Ocean Territory
+Iraq
+Iran Islamic Republic of
+Iceland
 Italy
-Jamaica
-Japan
 Jersey
+Jamaica
 Jordan
-Kazakhstan
+Japan
 Kenya
-Kiribati
-Kuwait
 Kyrgyzstan
+Cambodia
+Kiribati
+Comoros
+Saint Kitts and Nevis
+Democratic People's Republic of Korea
+Republic of Korea
+Kuwait
+Cayman Islands
+Kazakhstan
 Lao People's Democratic Republic
-Latvia
 Lebanon
-Lesotho
-Liberia
-Libya
+Saint Lucia
 Liechtenstein
+Sri Lanka
+Liberia
+Lesotho
 Lithuania
 Luxembourg
+Latvia
+Libya
+Morocco
+Monaco
+Republic of Moldova
+Montenegro
+Saint Martin French Part
 Madagascar
-Malawi
-Malaysia
-Maldives
-Mali
-Malta
 Marshall Islands
+North Macedonia
+Mali
+Myanmar
+Mongolia
+China, Macao Special Administrative Region
+Northern Mariana Islands
 Martinique
 Mauritania
-Mauritius
-Mayotte
-Mexico
-Micronesia (Federated States of)
-Monaco
-Mongolia
-Montenegro
 Montserrat
-Morocco
+Malta
+Mauritius
+Maldives
+Malawi
+Mexico
+Malaysia
 Mozambique
-Myanmar
 Namibia
-Nauru
-Nepal
-Netherlands
 New Caledonia
-New Zealand
-Nicaragua
 Niger
-Nigeria
-Niue
 Norfolk Island
-North Macedonia
-Northern Mariana Islands
+Nigeria
+Nicaragua
+Netherlands
 Norway
+Nepal
+Nauru
+Niue
+New Zealand
 Oman
-Pakistan
-Palau
 Panama
-Papua New Guinea
-Paraguay
 Peru
+French Polynesia
+Papua New Guinea
 Philippines
-Pitcairn
+Pakistan
 Poland
-Portugal
+Saint Pierre and Miquelon
+Pitcairn
 Puerto Rico
+State of Palestine
+Portugal
+Palau
+Paraguay
 Qatar
-Republic of Korea
-Republic of Moldova
 Réunion
 Romania
+Serbia
 Russian Federation
 Rwanda
-Saint Barthélemy
-Saint Helena
-Saint Kitts and Nevis
-Saint Lucia
-Saint Martin (French Part)
-Saint Pierre and Miquelon
-Saint Vincent and the Grenadines
-Samoa
-San Marino
-Sao Tome and Principe
-Sark
 Saudi Arabia
-Senegal
-Serbia
-Seychelles
-Sierra Leone
-Singapore
-Sint Maarten (Dutch part)
-Slovakia
-Slovenia
 Solomon Islands
-Somalia
-South Africa
-South Georgia and the South Sandwich Islands
-South Sudan
-Spain
-Sri Lanka
-State of Palestine
+Seychelles
 Sudan
-Suriname
-Svalbard and Jan Mayen Islands
 Sweden
-Switzerland
+Singapore
+Saint Helena
+Slovenia
+Svalbard and Jan Mayen Islands
+Slovakia
+Sierra Leone
+San Marino
+Senegal
+Somalia
+Suriname
+South Sudan
+Sao Tome and Principe
+El Salvador
+Sint Maarten Dutch part
 Syrian Arab Republic
-Tajikistan
-Thailand
-Timor-Leste
-Togo
-Tokelau
-Tonga
-Trinidad and Tobago
-Tunisia
-Turkey
-Turkmenistan
+Eswatini
 Turks and Caicos Islands
+Chad
+French Southern Territories
+Togo
+Thailand
+Tajikistan
+Tokelau
+Timor-Leste
+Turkmenistan
+Tunisia
+Tonga
+Turkey
+Trinidad and Tobago
 Tuvalu
-Uganda
-Ukraine
-United Arab Emirates
-United Kingdom of Great Britain and Northern Ireland
 United Republic of Tanzania
+Ukraine
+Uganda
 United States Minor Outlying Islands
 United States of America
-United States Virgin Islands
 Uruguay
 Uzbekistan
-Vanuatu
-Venezuela (Bolivarian Republic of)
+Holy See
+Saint Vincent and the Grenadines
+Venezuela Bolivarian Republic of
+British Virgin Islands
+United States Virgin Islands
 Viet Nam
+Vanuatu
 Wallis and Futuna Islands
-Western Sahara
+Samoa
 Yemen
+Mayotte
+South Africa
 Zambia
 Zimbabwe

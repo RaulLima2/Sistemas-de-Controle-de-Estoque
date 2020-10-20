@@ -19,7 +19,7 @@ bool confirma_pesquia_codigo(P* produto, char* key);
 
 P* vender_produto(P* produto);
 
-int count_name_iqual(P* now, P* after);
+int count_name_iqual(P* now, char* nome_produto);
 
 void remover_produto(P* produto);
 

@@ -13,7 +13,7 @@ LP* atualizar_lista(LP* lista_produto);
 
 LP* vender(LP* lista_produto);
 
-int count_name(LP* lista_produto);
+int count_name(LP* lista_produto, char* nome_produto);
 
 LP* remove_produto(LP* lista_produto);
 

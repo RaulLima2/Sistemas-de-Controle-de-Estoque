@@ -2,11 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "produto.h"
 
 #include "tratamento de dados/inteiro/inteiro.h"
 #include "tratamento de dados/get_pais/get_pais.h"
 #include "tratamento de dados/gerar_codigo/gerar_cod.h"
+#include "produto.h"
 
 struct produto
 {
@@ -32,7 +32,7 @@ P* crear_produto(char* nome, char* local, int quantidade, int cod)
   new->qtd_items = quantidade;
   new->cod = cod;
   
-  if(country_check)
+  if(country_check == true)
   {
     strncpy(new->nome_produto, nome, strlen(nome));
     strncpy(new->pais_produto, local, strlen(local));
@@ -50,6 +50,8 @@ P* crear_produto(char* nome, char* local, int quantidade, int cod)
     {
       printf("%s\n", error[i]);
     }
+
+		return NULL;
   }
 
   return new;
@@ -65,7 +67,8 @@ P* atualiza_produto(P* produto)
     "Atualizar as informações de um produto:\n\n",
     "%-4d - Alterar o nome;\n",
     "%-4d - Alterar o País de origem;\n",
-    "%-4d - Adcionar mais itens;\n"
+    "%-4d - Adcionar mais itens;\n",
+		"Insira o código do produto:\n"
   };
 
   for(int i = 0; i < 4; i++)
@@ -74,6 +77,7 @@ P* atualiza_produto(P* produto)
   }
   scanf("%d", &temp_chose);
 
+	printf("%s", __format[4]);
   getchar();
 
   if(temp_chose == 1)
@@ -167,11 +171,11 @@ P* vender_produto(P* produto)
   return produto;
 }
 
-int count_name_iqual(P* now, P* after)
+int count_name_iqual(P* now, char* nome_produto)
 {
-  if(after != NULL)
+  if(now != NULL)
   {
-    if(strncmp(now->nome_produto, after->nome_produto, strlen(after->nome_produto)) != 0)
+    if(strstr(now->nome_produto, nome_produto) == NULL)
     {
       return 1;
     }
@@ -179,8 +183,9 @@ int count_name_iqual(P* now, P* after)
     {
       return 0;
     }
-    
   }
+	
+	return 1;
 }
 
 void print_quantidade_em_produto(P* produto)
@@ -200,10 +205,12 @@ void print_produto(P* produto)
     "Código: %s\n"
   };
 
-
-  printf(__format[0], produto->key);
-  printf(__format[1], produto->nome_produto);
-  printf(__format[2], produto->pais_produto);
-  printf(__format[3], produto->qtd_items);
-  printf(__format[4], produto->key);
+	if(produto != NULL)
+	{
+		printf(__format[0], produto->key);
+		printf(__format[1], produto->nome_produto);
+		printf(__format[2], produto->pais_produto);
+		printf(__format[3], produto->qtd_items);
+		printf(__format[4], produto->key);
+	}
 }

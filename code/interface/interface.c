@@ -9,8 +9,8 @@ void interface()
 {
   LP* new = create_struct();
   int quantidade_produto;
-  char* nome_produto = (char*)calloc(50,sizeof(char));
-  char* origem = (char*)calloc(50,sizeof(char));
+  char* nome_produto = (char*)calloc(500,sizeof(char));
+  char* origem = (char*)calloc(500,sizeof(char));
   char* key = (char*)calloc(9, sizeof(char));
 
   int i = 0;
@@ -49,13 +49,14 @@ void interface()
     {
       printf("%s", input[10]);
       getchar();
-      fgets(nome_produto, 50, stdin);
+      fgets(nome_produto, 500, stdin);
       nome_produto[strlen(nome_produto) - 1] = '\0';
 
       printf("%s", input[11]);
       //getchar();
-      fgets(origem, 50, stdin);
+      fgets(origem, 500, stdin);
       origem[strlen(origem) - 1] = '\0';
+			printf("%s\n",origem);
 
       printf("%s",input[12]);
       scanf("%d", &quantidade_produto);
@@ -66,7 +67,16 @@ void interface()
       }
       else
       {
-        inserir_lista_produto(&new, nome_produto, origem, quantidade_produto);
+				
+				if(count_name(new, nome_produto) == 20)
+				{
+					printf("Não é possível adicionar mais produtos no estoque\n");
+					return;
+				}
+				else
+				{
+        	inserir_lista_produto(&new, nome_produto, origem, quantidade_produto);
+				}				
       }
     }
     else if(escolha == 2)
